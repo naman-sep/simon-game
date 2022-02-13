@@ -64,7 +64,7 @@ function checkAnswer(currentLevel){
     count++;
     if (userClickedPattern.length === gamePattern.length) {
       setTimeout(function() {
-        nextSequence();
+        nextSequence()
       }, 1000);
     }
 
@@ -79,9 +79,7 @@ function checkAnswer(currentLevel){
 $(document).keydown(function() {
   if (!start) {
     $("#level-title").text("Level " + level);
-    setTimeout(function(){
-      nextSequence();
-    }, 100);
+    nextSequence();
     start = true;
   }
 });
